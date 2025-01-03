@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  height: 100vh;
+  background-color: #1B1B32;
+  /* font-family: monospace; */
+  position: relative;
+}
+
+.title {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 25rem;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: normal;
+  /* letter-spacing: 1px; */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border: 3px solid white;
+  background-color: #3B3B4F;
+  width: 32rem;
+  height: 16.5rem;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: monospace;
+  word-spacing: -6px;
+}
+
+.number {
+  border: 1px solid #FFFFFF;
+  background-color: #0A0A23;
+  margin-bottom: 1.5rem;
+  height: 4rem;
+  color: #FFFFFF;
+  /* padding: 0.5rem; */
+  font-size: 2.25rem;
+  padding: 0 1rem;
+}
+
+.convert-btn {
+  height: 4rem;
+  background-color: #FDB833;
+  border: 3px solid #FEAC32;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
+.output {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: none;
+}
+
+/* Error styling */
+.error {
+  color: #850000;
+  background-color: #FFADAD; 
+  border: 3px solid #850000;
+  width: 32rem;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.125rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Success styling */
+.success {
+  color: #FFFFFF; 
+  background-color: #3B3B4F; 
+  border: 3px solid #FFFFFF;
+  font-size: 2.25rem;
+  width: 32rem;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  text-align: center;
+}
